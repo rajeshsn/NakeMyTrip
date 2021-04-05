@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AutomationTest]">
+  <listeners>
+    <listener class-name="utilities.Listener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Sanity(failed)">
+    <classes>
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="homePageTest2"/>
+          <include name="ClickSearchButtonTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="homePageTest1"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+    </classes>
+  </test> <!-- Sanity(failed) -->
+  <test thread-count="5" verbose="0" name="Regression(failed)">
+    <classes>
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="homePageTest2"/>
+          <include name="ClickSearchButtonTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="homePageTest1"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+      <class name="tests.FlightDetailsPageTest">
+        <methods>
+          <include name="flightDetailsTest1"/>
+          <include name="invokeDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.FlightDetailsPageTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [AutomationTest] -->

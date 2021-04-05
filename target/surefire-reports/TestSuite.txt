@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 2, Errors: 0, Skipped: 11, Time elapsed: 2.123 s <<< FAILURE! - in TestSuite
+tests.HomePageTest.setup  Time elapsed: 1.085 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\Rajesh\Documents\NakeMyTrpAutomationFramework\usr.dir\NakeMyTrpAutomationFramework\src\main\resources\chromedriver.exe
+	at tests.HomePageTest.setup(HomePageTest.java:17)
+
+tests.FlightDetailsPageTest.invokeDriver  Time elapsed: 1.803 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\Rajesh\Documents\NakeMyTrpAutomationFramework\usr.dir\NakeMyTrpAutomationFramework\src\main\resources\chromedriver.exe
+	at tests.FlightDetailsPageTest.invokeDriver(FlightDetailsPageTest.java:20)
+
